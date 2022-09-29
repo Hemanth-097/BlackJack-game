@@ -1,7 +1,7 @@
 // Declare and store player's info in a object called player
 let player = {
     name: "Hemanth",
-    chips: 500
+    chips: 1000
 }
 // Declare a variable called cards and assign its value to an empty array
 let cards = []
