@@ -1,3 +1,216 @@
+/* ---------------------- */
+/* Fonts                  */
+/* ---------------------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Work+Sans:wght@300&display=swap");
+
+/* ---------------------- */
+/* Custom properties      */
+/* ---------------------- */
+
+:root {
+  /* Primary */
+  --clr-light-green: #61ed6e;
+  --clr-bright-red: #dd3138;
+  --clr-dark-blue: #222c44;
+  --clr-light-orange: #a54e13;
+
+  /* Neutral  */
+  --clr-light-grey: #000000;
+  --clr-light-white: #eff3fe;
+
+  --ff-main: "Montserrat", sans-serif;
+  --ff-serif: "Work Sans", sans-serif;
+}
+
+/* ---------------------- */
+/* Reset                  */
+/* ---------------------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+/* ---------------------- */
+/* Typography             */
+/* ---------------------- */
+
+body {
+  font-family: var(--ff-serif);
+  font-weight: bold;
+  color: var(--clr-dark-blue);
+  /* background-color: var(--clr-light-blue); */
+  /* background-image: url("images/6037691.jpg"); */
+  background-size: cover;
+  background-image: url("images/cigar-chips-gamblings-drink-playing-cards.jpg");
+
+}
+
+h1 {
+  font-family: var(--ff-main);
+  color: var(--clr-desaturated-yellow);
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+p {
+  margin: 1em;
+  font-weight: 400;
+}
+
+hr {
+  margin-top: 1em;
+  color: var(--clr-light-blue);
+}
+
+footer {
+  padding: 2em;
+}
+
+/* ---------------------- */
+/* Buttons                */
+/* ---------------------- */
+
+.buttons {
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  /* min-width: 50%; */
+  font-weight: bold;
+  margin: 1em;
+  padding: 1em 3em;
+  border: none;
+  border-radius: 1em;
+  color: var(--clr-light-grey);
+  /* max-width: 150px; */
+  background-color: var(--clr-light-green);
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  /* margin-bottom:  .25em; */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07),
+    0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07),
+    0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+  transition: all 250ms;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--clr-bright-red);
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.09), 0 4px 2px rgba(0, 0, 0, 0.09),
+    0 8px 4px rgba(0, 0, 0, 0.09), 0 16px 8px rgba(0, 0, 0, 0.09),
+    0 32px 16px rgba(0, 0, 0, 0.09);
+}
+
+#btn-draw-el {
+  display: none;
+  background-color: var(--clr-light-orange);
+}
+
+#btn-draw-el:hover,
+#btn-draw-el:focus {
+  background-color: var(--clr-bright-red);
+}
+
+/* ---------------------- */
+/* Components             */
+/* ---------------------- */
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.container {
+  margin-top: 1em;
+  width: min(90%, 27rem);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: var(--clr-light-white);
+  border-radius: 1em;
+  opacity: 0.8;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07),
+    0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07),
+    0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+  transition: all 250ms;
+}
+
+.blackjack {
+  width: 100%;
+  padding: 1em;
+}
+
+.blackjack__img {
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+}
+
+#message-el {
+  font-style: italic;
+}
+
+#player-el {
+  font-weight: 900;
+}
+
+.playerInfo {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+  align-items: center;
+}
+.playerInfo__avatar {
+  max-width: 30px;
+  border-radius: 50%;
+  border: 2px solid var(--clr-bright-red);
+}
+
+/* footer */
+
+.attribution {
+  font-family: var(--ff-serif);
+  font-size: 11px;
+  text-align: center;
+  color: var(--clr-neutral);
+}
+
+.attribution a {
+  text-decoration: none;
+  color: hsl(228, 45%, 44%);
+}
+
+/* ---------------------- */
+/* Media queries          */
+/* ---------------------- */
+
+/* @media (min-width: 520px) {
+  .buttons {
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+  }
+} */
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Work+Sans:wght@300&display=swap");
+
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
     background-image: url("images/table.png");
@@ -26,4 +239,4 @@ button {
     border-radius: 2px;
     margin-bottom: 2px;
     margin-top: 2px;
-}
+} */

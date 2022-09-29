@@ -3,13 +3,31 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <h1>Blackjack</h1>
-        <p id="message-el">Want to play a round?</p>
-        <p id="cards-el">Cards:</p>
-        <p id="sum-el">Sum:</p>
-        <button onclick="startGame()">START GAME</button>
-        <button onclick="newCard()">NEW CARD</button>
-        <p id="player-el"></p>
+        <main>
+            <div class="container">
+                <a href="https://www.freepik.com/vectors/roulette"><img class="blackjack__img"
+                    src="images/rouletteFreepik.jpg" alt="rouletteFreepik"></a>
+
+                <div class="BlackJack">
+                    <h1>Blackjack</h1>
+                    <p id="message-el">Want to play a round?</p>
+                    <p id="cards-el">Cards:</p>
+                    <p id="sum-el">Sum:</p>
+                    <div class="buttons">
+                        <button class="btn" id="btn-start-el" onclick="startGame()">Start Game</button>
+                        <button class="btn" id="btn-new-el" onclick="newCard()">New Card</button>
+                    </div>
+                    <div class="playerInfo">
+                        <a href='https://img.freepik.com/free-vector/heart-with-wings_98292-6847.jpg?w=740&t=st=1664476688~exp=1664477288~hmac=f073ad0ebba69335f6b2c4c978ccc2bfc9f8d13181b5e7fb907ac11ce78682ff'><img class="playerInfo__avatar"
+                            src="images/6847.jpg" alt="player avatar"></a>
+                        <p id="player-el"></p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+
+        </footer>
         <script src="index.js"></script>
     </body>
 </html>
